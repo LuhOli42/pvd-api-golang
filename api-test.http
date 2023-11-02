@@ -1,0 +1,25 @@
+@url=http://localhost:
+@port=3000
+
+###
+GET {{url}}{{port}}/categories/list
+
+###
+POST {{url}}{{port}}/categories/create
+Content-Type: application/json
+
+{
+    "Description":"123"
+}
+
+###
+DELETE {{url}}{{port}}/categories/20
+
+
+###
+PUT {{url}}{{port}}/categories/20
+Content-Type: application/json
+
+{
+    "Description":"Instrumentos musicais"
+}
